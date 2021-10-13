@@ -5,3 +5,13 @@ function displayTime() {
     timeDisplayEL.text(rightNow);
 }
 displayTime()
+
+var text = $(".text-input")
+
+var textInput = {
+    text: text.value 
+}
+
+localStorage.setItem("textInput", (textInput));
+
+

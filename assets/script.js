@@ -7,8 +7,6 @@ timeDisplayEL.text(rightNow);
 displayTime()
 
 
-
-
 $(document).ready(function() {
 
     $(".saveBtn").click(function() {
@@ -20,32 +18,33 @@ $(document).ready(function() {
 
         localStorage.setItem(toDoTime, toDoText);
     });
-})
 
-//     $(".row").each(function() {
-//         var hour = moment().hours();
-//         console.log(hour);
+    $(".row").each(function() {
+        var hour = moment().hours();
 
-//         var rowHour = parseInt($(this).attr("id"));
+        var rowHour = parseInt($(this).attr("id"));
 
-//         console.log(localStorage.getItem(rowHour));
-//         console.log("this:", $(this).attr("id"));
+        $("#9 .toDo").val(localStorage.getItem("9"))
+        $("#10 .toDo").val(localStorage.getItem("10"))
+        $("#11 .toDo").val(localStorage.getItem("11"))
+        $("#12 .toDo").val(localStorage.getItem("12"))
+        $("#13 .toDo").val(localStorage.getItem("13"))
+        $("#14 .toDo").val(localStorage.getItem("14"))
+        $("#15 .toDo").val(localStorage.getItem("15"))
+        $("#16 .toDo").val(localStorage.getItem("16"))
+        $("#17 .toDo").val(localStorage.getItem("17"))
 
-//         var textArea = document.querySelector(".text" + rowHour)
-
-//         // textArea.value = localStorage.getItem(rowHour)
-
-//         if (rowHour < hour) {
-//             $(this).addClass("past");
-//         }
-//         else if (rowHour === hour) {
-//             $(this).removeClass("past");
-//             $(this).addClass("present");
-//         }
-//         else {
-//             $(this).removeClass("past");
-//             $(this).removeClass("present");
-//             $(this).addClass("future");
-//         }
-//     });
-// });
+        if (rowHour < hour) {
+            $(this).addClass("past");
+        }
+        else if (rowHour === hour) {
+            $(this).removeClass("past");
+            $(this).addClass("present");
+        }
+        else {
+            $(this).removeClass("past");
+            $(this).removeClass("present");
+            $(this).addClass("future");
+        }
+    });
+});

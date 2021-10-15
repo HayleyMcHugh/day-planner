@@ -23,15 +23,6 @@ body {
     border-bottom: 10px solid black;
   }
   
-  .description {
-    white-space: pre-wrap;
-  }
-  
-  .time-block {
-    text-align: center;
-    border-radius: 15px;
-  }
-  
   .row {
     white-space: pre-wrap;
     height: 100px;
@@ -48,7 +39,7 @@ body {
     border-radius: 5px;
   }
   
-  .col-9 {
+  .col-8 {
     border: 2px solid black;
     display: flex;
     justify-content: left;

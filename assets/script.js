@@ -13,9 +13,6 @@ $(document).ready(function() {
         var toDoText=$(this).siblings(".toDo").val();
         var toDoTime=$(this).parent().attr("id");
 
-        console.log(toDoText);
-        console.log(toDoTime);
-
         localStorage.setItem(toDoTime, toDoText);
     });
 
@@ -46,5 +43,9 @@ $(document).ready(function() {
             $(this).removeClass("present");
             $(this).addClass("future");
         }
+    });
+
+    $(".deleteBtn").click(function() {
+        localStorage.clear();
     });
 });

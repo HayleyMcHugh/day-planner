@@ -66,16 +66,22 @@ body {
   .past {
     background-color: #aaa9ac;
     color: white;
+    border-radius: 5px;
+    padding: 0;
   }
   
   .present {
     background-color: #ff6961;
     color: white;
+    border-radius: 5px;
+    padding: 0;
   }
   
   .future {
     background-color: #77dd77;
     color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 0;
   }
   
   .saveBtn {
@@ -83,12 +89,13 @@ body {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: #06aed5;
-    color: rgb(186, 194, 193);
+    color: rgb(60, 63, 63);
   }
   
   .saveBtn i:hover {
     font-size: 20px;
     transition: all 0.3s ease-in-out;
+    border-radius: 5px;
   }
 
   .deleteBtn {
